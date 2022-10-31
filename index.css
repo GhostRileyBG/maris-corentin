@@ -125,9 +125,9 @@ canvas {
    } */
 
 h1:hover {
-  transform: translate3d(0, -10px, 22px);
+  transform: translate3d(0px,-10px,22px);
   color: #ff0266;
-  top: 45%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
