@@ -65,6 +65,46 @@ canvas {
     border-radius: 0 0 3px 3px;
 }
 
+/* Navbar */
+
+navbar {
+  position: absolute;
+  top: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  margin: 10px;
+}
+
+.nav-ul {
+  display: flex;
+  padding: 0;
+  width: fit-content;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  height: fit-content;
+  margin: 0 20px;
+  padding: 10px 0;
+}
+
+.nav-link a {
+  font-size:20px;
+  position: relative;
+  letter-spacing: 0.3em;
+  font-family: "ROBOTO", sans-serif;
+  font-weight: 300;
+  color: #20ff02;
+  text-decoration: none;
+}
+
 /*  */
 
 .nav,
@@ -178,17 +218,18 @@ span:hover {
 }
 
 .loader span {
-  color: #faebd7;
-  text-shadow: 0 0 0 #faebd7;
+  color: #ff0266;
+  text-shadow: 0 0 0 #20ff02;
   -webkit-animation: loading 1s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes loading {
   to {
-    text-shadow: 20px 0 70px #ff0266;
-    color: #ff0266;
+    text-shadow: 20px 0 70px #20ff02;
+    color: #000000;
   }
 }
+
 .loader span:nth-child(2) {
   -webkit-animation-delay: 0.1s;
 }
