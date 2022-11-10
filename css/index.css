@@ -102,6 +102,7 @@ navbar {
   font-family: "ROBOTO", sans-serif;
   font-weight: 300;
   color: #20ff02;
+  text-shadow: 1px 0 1px #ffffff;
   text-decoration: none;
 }
 
