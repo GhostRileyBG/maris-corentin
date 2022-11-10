@@ -128,7 +128,7 @@ navbar {
   margin: 0;
   padding-bottom: 0.5rem;
   letter-spacing: 0.1rem;
-  color: #03dac6;
+  color: #20a80e;
   transition: all 0.3s ease;
   z-index: 3;
   top: 45%;
@@ -166,8 +166,8 @@ navbar {
 
 h1:hover {
   transform: translate3d(0px,-10px,22px);
-  color: #ff0266;
-  top: 42%;
+  color: #ffffff;
+  top: 44%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -204,7 +204,13 @@ span:hover {
 @media (min-width: 800px) {
   .nav h1,
   .slider h1 {
+    font-size: 4vw;
+    text-shadow: 2px 0 2px #ffffff;
+  }
+
+  h1:hover{
     font-size: 5vw;
+    text-shadow: 0px 0 20px #20a80e;
   }
 
   .nav h2,
@@ -218,15 +224,15 @@ span:hover {
 }
 
 .loader span {
-  color: #ff0266;
-  text-shadow: 0 0 0 #20ff02;
+  color: #000000;
+  text-shadow: 0 0 0 #000000;
   -webkit-animation: loading 1s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes loading {
   to {
-    text-shadow: 20px 0 70px #20ff02;
-    color: #000000;
+    text-shadow: 20px 0 50px #888888;
+    color: #20ff02;
   }
 }
 
