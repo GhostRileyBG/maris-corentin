@@ -199,6 +199,18 @@ p{
   text-shadow: 1px 0 1px #ffffff;
   font-size:20px;
   text-align: center;
+  margin-bottom: 10px;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 span:hover {
