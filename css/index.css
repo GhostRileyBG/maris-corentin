@@ -98,7 +98,7 @@ navbar {
 .nav-link a {
   font-size:25px;
   position: relative;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
   font-family: "ROBOTO", sans-serif;
   font-weight: 300;
   color: #20ff02;
@@ -193,6 +193,14 @@ h3.span {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+p{
+  color: #20a80e;
+  text-shadow: 1px 0 1px #ffffff;
+  font-size:20px;
+  text-align: center;
+}
+
 span:hover {
   color: #ff0266;
   font-weight: 500;
