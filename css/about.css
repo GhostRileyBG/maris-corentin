@@ -341,12 +341,12 @@
   position: relative;
   z-index: 1;
   overflow-x: hidden;
-  background-color: white;
+  background-color: #00000080;
   display: flex;
   transition: 0.3s;
   flex-direction: column;
   border-radius: 10px;
-  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 
 .card[data-state="#about"] {
@@ -357,11 +357,12 @@
 }
 
 .card[data-state="#contact"] {
-  height: 430px;
+  height: 450px;
+  width: 340px;
 }
 
 .card[data-state="#experience"] {
-  height: 550px;
+  height: 570px;
 }
 
 .card.is-active .card-header {
@@ -438,7 +439,7 @@
 
 h1.card-fullname{
   font-family: "Jost", sans-serif;
-  color:#2b2c48;  
+  color:#20ff02;  
   text-shadow: none;
   letter-spacing:normal;
   position: absolute;
@@ -454,7 +455,7 @@ h1.card-fullname{
 
 h2.card-jobtitle {
   font-family: "Jost", sans-serif;
-  color:#2b2c48;  
+  color:#20ff02;  
   position: absolute;
   bottom: 0;
   font-size: 11px;
@@ -478,7 +479,7 @@ h2.card-jobtitle {
 
 .card-subtitle {
   font-family: "Jost", sans-serif;
-  color:#2b2c48;  
+  color:#ffffff;  
   text-align: left;
   font-weight: 700;
   font-size: 13px;
@@ -493,11 +494,12 @@ h2.card-jobtitle {
 .card-desc {
   line-height: 1.6;
   text-align: left;
-  color: #636b6f;
+  color: #ffffff;
   font-size: 14px;
   margin: 0;
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
+  text-shadow: none;
 }
 
 .card-social {
@@ -513,7 +515,7 @@ h2.card-jobtitle {
   transition: 0.3s;
 }
 .card-social a {
-  color: #8797a1;
+  color: #ffffff;
   height: 32px;
   width: 32px;
   border-radius: 50%;
@@ -521,7 +523,7 @@ h2.card-jobtitle {
   align-items: center;
   justify-content: center;
   transition: 0.3s;
-  background-color: rgba(93, 133, 193, 0.05);
+  background-color:#ffffff;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -534,7 +536,7 @@ h2.card-jobtitle {
 
 .card-buttons {
   display: flex;
-  background-color: #fff;
+  /* background-color: #ffffff; */
   margin-top: auto;
   position: relative;
   bottom: 0;
@@ -551,7 +553,7 @@ h2.card-jobtitle {
   border: 0;
   padding: 15px 5px;
   cursor: pointer;
-  color: #5c5c6d;
+  color: #20ff02;
   transition: 0.3s;
   font-family: "Jost", sans-serif;
   font-weight: 500;
@@ -559,9 +561,9 @@ h2.card-jobtitle {
   border-bottom: 3px solid transparent;
 }
 .card-buttons button.is-active, .card-buttons button:hover {
-  color: #2b2c48;
-  border-bottom: 3px solid #8a84ff;
-  background: linear-gradient(to bottom, rgba(127, 199, 231, 0) 0%, rgba(207, 204, 255, 0.2) 44%, rgba(211, 226, 255, 0.4) 100%);
+  color: #20ff02;
+  border-bottom: 3px solid #20ff02;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.267) 0%, rgba(207, 204, 255, 0.2) 44%, rgba(255, 255, 255, 0.4) 100%);
 }
 
 .card-section {
@@ -597,7 +599,7 @@ h2.card-jobtitle {
   position: relative;
 }
 .card-timeline:after {
-  background: linear-gradient(to top, rgba(134, 214, 243, 0) 0%, #516acc 100%);
+  background: linear-gradient(to top, rgb(0, 0, 0) 0%, #20ff02 100%);
   content: "";
   left: 42px;
   width: 2px;
@@ -626,12 +628,12 @@ h2.card-jobtitle {
   width: 8px;
   height: 8px;
   line-height: 0.6;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   font-size: 11px;
   text-indent: -35px;
   border-radius: 50%;
-  color: rgba(134, 134, 134, 0.7);
-  background: linear-gradient(to bottom, #a0aee3 0%, #516acc 100%);
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to bottom, #000000 0%, #000000 100%);
 }
 
 .card-item-title {
@@ -639,13 +641,13 @@ h2.card-jobtitle {
   font-size: 14px;
   margin-bottom: 5px;
   font-family: "Jost", sans-serif;
-  color:#2b2c48;  
+  color:#ffffff;  
   text-shadow: none;
 }
 
 .card-item-desc {
   font-size: 13px;
-  color: #6f6f7b;
+  color: #ffffff;
   line-height: 1.5;
   font-family: "DM Sans", sans-serif;
 }
@@ -658,7 +660,7 @@ h2.card-jobtitle {
   display: flex;
   align-items: center;
   font-size: 13px;
-  color: #6f6f7b;
+  color: #ffffff;
   font-family: "DM Sans", sans-serif;
   line-height: 1.6;
   cursor: pointer;
@@ -673,14 +675,14 @@ h2.card-jobtitle {
   margin-right: 12px;
   transition: 0.3s;
   padding-right: 12px;
-  border-right: 1px solid #dfe2ec;
+  border-right: 1px solid #20ff02;
 }
 
 .contact-me {
   border: 0;
   outline: none;
-  background: linear-gradient(to right, rgba(83, 200, 239, 0.8) 0%, rgba(81, 106, 204, 0.8) 96%);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(32, 255, 2, 0.562) 96%);
+  box-shadow: 0 4px 6px rgb(255, 255, 255);
   color: #fff;
   padding: 12px 16px;
   width: 100%;
