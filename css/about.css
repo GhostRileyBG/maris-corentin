@@ -362,7 +362,7 @@
 }
 
 .card[data-state="#experience"] {
-  height: 600px;
+  height: 450px;
 }
 
 .card.is-active .card-header {
