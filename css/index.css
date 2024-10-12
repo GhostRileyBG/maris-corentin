@@ -137,34 +137,6 @@ navbar {
   transform: translate(-50%, -50%);
 }
 
-/* .scroll-text-div{
-    height: 50px;	
-    overflow: hidden;
-    position: relative;
-}
-
-.scroll-text{
-    position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 50px;
- text-align: center;
- // Starting position 
- transform:translateX(100%);
- // Apply animation to this element 
- animation: scroll-left 15s linear infinite;
-}
-
-@keyframes scroll-left {
-    0%   {
-    transform: translateX(100%); 		
-    }
-    100% {
-    transform: translateX(-100%); 
-    }
-   } */
-
 h1:hover {
   transform: translate3d(0px,-10px,22px);
   color: #ffffff;
@@ -211,15 +183,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-span:hover {
-  color: #ff0266;
-  font-weight: 500;
-  font-size: 2.2vw;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 @media (min-width: 800px) {
