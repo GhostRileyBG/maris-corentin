@@ -7,25 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/work.css">
+    <link rel="stylesheet" href="../css/page_video_game.css" />
 </head>
 
 <body>
 
     <div class="nav">
         <div id="particles-js">
-          <navbar>
-            <ul class="nav-ul">
-              <li class="nav-link"><a href="../index.html">Home</a></li>
-              <li class="nav-link"><a href="./work.html">Work</a></li>
-              <li class="nav-link"><a href="./about.html">About</a></li>
-            </ul>
-          </navbar>
-          <!-- <h3 class="span loader">
-            <span class="m">In progress</span>
-          </h3> -->
+            <navbar>
+                <ul class="nav-ul">
+                    <li class="nav-link"><a href="../index.html">Home</a></li>
+                    <li class="nav-link"><a href="./work.html">Work</a></li>
+                    <li class="nav-link"><a href="./about.html">About</a></li>
+                </ul>
+            </navbar>
         </div>
 
-    <div id="cards">
+        <!-- <div class="grid grid-video-game-1"></div>
+        <section id="landing-section" style="width: 75%;">
+            <h1>Video games</h1>
+        </section> -->
+
+        <!------------------------------------------------------ VIDEO GAME -------------------------------------------->
+
+        <!-- <div class="div-row" id="filter-btn-container" style="justify-content: flex-start; width: 75%;">
+            <a class="btn1 filter-active-btn" onclick="filterSelection('all')">ALL</a>
+            <a class="btn1" onclick="filterSelection('work')">WORK</a>
+            <a class="btn1" onclick="filterSelection('school')">SCHOOL</a>
+            <a class="btn1" onclick="filterSelection('jam')">JAM</a>
+            <a class="btn1" onclick="filterSelection('prototype')">SOLO DEV</a>
+        </div>
+        <br />
+        <section id="video-game-section" class="div-row">
+            <div class="div-grid" id="video-game-container"></div>
+        </section> -->
+
+        <div id="cards">
         <div class="card" onclick="window.open('https://alvina-dr.itch.io/qatp', '_blank')">
             <div class="card-content">
                 <div class="card-image">
@@ -164,16 +181,19 @@
         </div>
     </div>
 
-    <footer>
-        <div class="grid grid-footer">
-          <p>Made by Corentin Maris</p><br>
-        </div>
-      </footer>
+        <footer>
+            <div class="grid grid-footer">
+                <p>Made by Corentin Maris</p><br>
+            </div>
+        </footer>
     </div>
 
     <script src="../js/work.js"></script>
     <script src="../js/particles.js"></script>
     <script src="../js/app.js"></script>
+    <!-- <script src="../js/filter_games.js"></script>
+    <script src="../data/video_games.js"></script>
+    <script src="../js/video_game_system.js"></script> -->
 
 </body>
 
