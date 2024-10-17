@@ -1,0 +1,37 @@
+navbar {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+    margin: 10px;
+}
+
+.nav-ul {
+    display: flex;
+    padding: 0;
+    width: fit-content;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    height: fit-content;
+    margin: 0 20px;
+    padding: 10px 0;
+}
+
+.nav-link a {
+    font-size: 25px;
+    position: relative;
+    letter-spacing: 0.2em;
+    font-family: "ROBOTO", sans-serif;
+    font-weight: 300;
+    color: #20ff02;
+    text-shadow: 1px 0 1px #ffffff;
+    text-decoration: none;
+}
