@@ -9,6 +9,12 @@ for (let i = 0; i < videoGameDatas.length; i++) {
     "video-game-card-container object-to-filter " +
     videoGameDatas[i]["filter-type"]
   );
+  // Crée une div parent qui contiendra "video-game-card" et "video-game-card-bottom"
+  var _videoGameCardWrapper = _videoGameCardContainer.appendChild(
+    document.createElement("div")
+  );
+  _videoGameCardWrapper.setAttribute("class", "video-game-card-wrapper");
+  // Ajoute la div "video-game-card" dans le parent
   var _videoGameProject = _videoGameCardContainer.appendChild(
     document.createElement("div")
   );
@@ -21,6 +27,8 @@ for (let i = 0; i < videoGameDatas.length; i++) {
       id: i,
     })
   );
+
+  
   var _videoGameCardDiv = _videoGameCardContainer.appendChild(
     Object.assign(document.createElement("div"), {
       classList: "video-game-card-bottom",
@@ -63,6 +71,9 @@ for (let i = 0; i < videoGameDatas.length; i++) {
   );
 
   videoGameContainer.appendChild(_videoGameCardContainer);
+  _videoGameCardContainer.appendChild(_videoGameCardWrapper);
+  _videoGameCardWrapper.appendChild(_videoGameProject);
+  _videoGameCardWrapper.appendChild(_videoGameCardDiv);
 
   videoGameElements.push(_videoGameProject);
   videoGameLinks.push(videoGameLink);

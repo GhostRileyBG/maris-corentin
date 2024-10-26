@@ -4,7 +4,8 @@ const videoGameDatas =
         "name" : "QATP",
         "image1": "../../img/video-games/qatp.jpg",
         "link": "video-games/qatp.html",
-        "filter-type": "jam"
+        "filter-type": "jam",
+        // "tags": ""
     },  
     {
         "name" : "SeedRails",

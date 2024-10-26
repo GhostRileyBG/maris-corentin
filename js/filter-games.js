@@ -1,6 +1,7 @@
-filterSelection("all")
+document.addEventListener("DOMContentLoaded", function() {
+  filterSelection("all");
+});
 function filterSelection(c) {
-
   var x, i;
   x = document.getElementsByClassName("object-to-filter");
   if (c == "all") c = "";

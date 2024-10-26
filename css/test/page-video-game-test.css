@@ -1,3 +1,8 @@
+:root {
+  --bg-color: rgb(20, 20, 20);
+  --card-color: rgb(23, 23, 23);
+}
+
 .grid-video-game-1 {
     margin: auto;
     margin-top: 120px;
@@ -16,6 +21,7 @@
     justify-content: center;
     grid-template-columns: 25% 25% 25% 25%;
     align-items: center;
+    gap: 15px;
   }
   
   @media screen and (max-width: 1500px) {
@@ -45,33 +51,19 @@
   }
   
   .video-game-card {
-    background-color: transparent;
-    position: relative;
-    width: 90%;
-    height: 100%;
-    transition: 0.5s;
+    align-items: center;
     display: flex;
-    align-items: flex-start;
-    justify-content: right;
-    margin: auto;
-    /* margin-bottom: 5px; */
-    /* border-radius: 8px; */
-    transform-style: preserve-3d;
+    height: 140px;
+    justify-content: center;
     overflow: hidden;
   }
   
-  .video-game-card:after {
-    content: "";
-    padding-bottom: 100%;
-  }
-  
   .video-game-card-bottom {
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
+    flex-grow: 1;
+    justify-content: flex-start;
+    padding: 0px 20px;
   }
   
   .video-game-title {
@@ -160,13 +152,17 @@
   }
   
   .video-game-card-img {
-    transition: 0.4s;
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    height: 130px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10%;
+    -o-object-position: center;
+    object-position: center;
+    -o-object-fit: cover;
     object-fit: cover;
-    margin: 0;
-    transform: scale(100%);
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-64px);
   }
   
   .video-game-card-img:hover {
@@ -193,23 +189,70 @@
     color: var(--secondary-color);
     right: 0px;
   }
+
+  .video-game-card-container:hover::before {
+    opacity: 1;
+  }
+  
+  .video-game-card-container::before,
+  .video-game-card-container::after {
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transition: opacity 500ms;
+    width: 100%;
+  }
+
+  .video-game-card-container::before {
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.06),
+        transparent 40%);
+    z-index: 3;
+  }
+  
+  .video-game-card-container::after {
+    background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.4),
+        transparent 40%);
+    z-index: 1;
+  }
   
   .video-game-card-container {
     position: relative;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    align-content: flex-start;
-    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    height: 260px;
+  }
+
+  .video-game-card-wrapper {
+    background-color: var(--card-color);
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    inset: 1px;
+    padding: 10px;
+    position: absolute;
+    z-index: 2;
   }
   
   .object-to-filter {
     display: none;
+    /* opacity: 0;
+    transition: opacity 0.3s ease-in-out; */
   }
   
   .filter-show {
     display: flex;
+    /* opacity: 1; */
   }
   
   .filter-active-btn {
