@@ -9,6 +9,10 @@ for (let i = 0; i < videoGameDatas.length; i++) {
     "video-game-card-container object-to-filter " +
     videoGameDatas[i]["filter-type"]
   );
+  // Redirige vers la page correspondante en cliquant sur la carte
+  _videoGameCardContainer.addEventListener("click", function() {
+    window.location.href = videoGameDatas[i].link;
+  });
   // Crée une div parent qui contiendra "video-game-card" et "video-game-card-bottom"
   var _videoGameCardWrapper = _videoGameCardContainer.appendChild(
     document.createElement("div")
