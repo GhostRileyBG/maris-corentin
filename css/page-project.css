@@ -1,0 +1,289 @@
+/* Container principal */
+.project-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Section d'en-tête */
+.header-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.project-title {
+    font-size: 3rem;
+    color: #6ef759;
+    text-shadow: 0 0 8px #6ef759;
+    margin: 0;
+}
+
+.project-tagline {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* Image principale */
+.main-image-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #20ff02;
+}
+
+/* Vidéo */
+.video-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #20ff02;
+}
+
+/* Description */
+.description-section {
+    margin: 2rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+/* Bouton de test */
+.test-button-section {
+    text-align: center;
+    margin: 2.5rem 0;
+    cursor: crosshair;
+}
+
+.test-button {
+    background-color: #20ff02;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+/* Animation du scan */
+.test-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+}
+
+/* Styles pour l’icône */
+.test-button i, .test-button svg {
+    font-size: 20px; /* Taille de l'icône */
+    color: #000; /* Couleur de l'icône */
+}
+
+@keyframes icon-flash {
+    0%, 100% { color: #000; }
+    50% { color: #ffffff; }
+}
+
+.test-button:hover i, .test-button:hover svg {
+    animation: icon-flash 0.6s ease;
+}
+
+.test-button:hover {
+    box-shadow: 0 0 15px #20ff02, 0 0 25px #20ff02;
+}
+
+.test-button:hover::before {
+    animation: scan 1.5s infinite; /* Animation du scan */
+}
+
+/* Animation keyframes pour le scan */
+@keyframes scan {
+    0% {
+        top: 0%;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        top: 100%;
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        top: 100%; /* Pause légère en bas du bouton */
+        opacity: 0;
+    }
+}
+
+/* Navigation */
+.navigation-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.nav-button {
+    font-size: 1rem;
+    color: #20ff02;
+    text-decoration: none;
+    border: 1px solid #20ff02;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.nav-button:hover {
+    color: #20ff02;
+    box-shadow: 0 0 10px #20ff02, 0 0 20px #20ff02;
+}
+
+/* Section Objectifs */
+.objectives-section,
+.challenges-section,
+.technologies-section {
+    margin: 2rem 2rem;
+    background-color: #1b1b1b;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #20ff02;
+}
+
+.objectives-section h2,
+.challenges-section h2,
+.technologies-section h2 {
+    font-size: 1.8rem;
+    color: #6ef759;
+    margin-bottom: 1rem;
+}
+
+.objectives-section p,
+.challenges-section p,
+.technologies-section p {
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Style pour la Galerie */
+.gallery-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.gallery-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #20ff02;
+    transition: transform 0.3s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+/* Conteneur des tags */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 10px;
+}
+
+/* Style des tags */
+.tag {
+    background-color: transparent;
+    color: #20ff02;
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 6px #20ff02;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.tag:hover {
+    box-shadow: 0 0 10px #20ff02;
+}
+
+/* Style pour le Carousel */
+
+.carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-button {
+    background: none;
+    border: none;
+    color: #20ff02;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-button.prev {
+    left: 0;
+}
+
+.carousel-button.next {
+    right: 0;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    transition: opacity 0.5s;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-slide img {
+    border-radius: 8px;
+}

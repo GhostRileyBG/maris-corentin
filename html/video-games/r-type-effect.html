@@ -1,11 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projet Détail - R-Type</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../css/page-project.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/footer-project.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <!-- <link rel="stylesheet" href="../../css/text.css"> -->
 </head>
+
 <body>
+
+    <!-- Navbar -->
+    <section class="navbar-section">
+        <navbar>
+            <ul class="nav-ul">
+                <li class="nav-link"><a href="../../index.html">Home</a></li>
+                <li class="nav-link"><a href="../work.html">Work</a></li>
+                <li class="nav-link"><a href="../about.html">About</a></li>
+            </ul>
+        </navbar>
+    </section>
+
+    <div class="project-container">
+
+        <!-- Titre et Tagline -->
+        <section class="header-section">
+            <h1 class="project-title">R-Type Effect</h1>
+            <div class="project-tags">
+                <span class="tag">Shooter</span>
+                <span class="tag">Sci-fi</span>
+                <span class="tag">3D</span>
+                <span class="tag">Pixel Art</span>
+                <span class="tag">Unity</span>
+                <span class="tag">VR</span>
+            </div>
+        </section>
+
+
+
+        <!-- Image principale -->
+        <section class="main-image-section">
+            <img src="../../img/video-games/r-type-effect/fight.png" alt="Image principale du projet"
+                class="main-image">
+        </section>
+
+        <!-- Vidéo du projet -->
+        <section class="video-section">
+            <video controls>
+                <source src="path/to/your/video.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéo.
+            </video>
+        </section>
+
+        <!-- Objectifs du Projet -->
+        <section class="objectives-section">
+            <h2>Objectifs du Projet</h2>
+            <p>
+                Le but de ce projet était d'explorer et de maîtriser les systèmes de gameplay et d'IA. J'ai notamment
+                cherché à concevoir une expérience interactive qui engage le joueur tout en optimisant les performances.
+            </p>
+        </section>
+
+        <!-- Défis Techniques -->
+        <section class="challenges-section">
+            <h2>Défis Techniques</h2>
+            <p>
+                L’un des plus grands défis était d’implémenter un système d'IA capable de s’adapter dynamiquement aux
+                actions du joueur tout en restant performant, même dans des scènes avec plusieurs ennemis.
+            </p>
+            <p>
+                J'ai conçu un algorithme de Level of Detail (LOD) pour réduire les calculs lorsque les ennemis ne sont
+                pas visibles, améliorant ainsi l'efficacité du rendu.
+            </p>
+        </section>
+
+        <!-- Technologies Utilisées -->
+        <section class="technologies-section">
+            <h2>Technologies Utilisées</h2>
+            <p>
+                <strong>Unity :</strong> pour l'ensemble du développement du jeu, en mettant l'accent sur l’optimisation
+                du gameplay.<br>
+                <strong>C# :</strong> pour la programmation des mécaniques de combat et de l'IA.<br>
+                <strong>Photoshop :</strong> pour la création des visuels et des assets.
+            </p>
+        </section>
+
+        <!-- Galerie d'image' -->
+        <section class="gallery-section">
+            <img src="../../img/video-games/r-type-effect/logo.png" alt="Capture d'écran 1" class="gallery-image">
+            <img src="../../img/video-games/r-type-effect/schema.jpg" alt="Capture d'écran 2" class="gallery-image">
+            <img src="../../img/video-games/r-type-effect/player.png" alt="Capture d'écran 3" class="gallery-image">
+            <img src="../../img/video-games/r-type-effect/ennemi.png" alt="Capture d'écran 4" class="gallery-image">
+            <img src="../../img/video-games/r-type-effect/ennemi.png" alt="Capture d'écran 4" class="gallery-image">
+            <img src="../../img/video-games/r-type-effect/ennemi.png" alt="Capture d'écran 4" class="gallery-image">
+        </section>
+
+        <!-- Carrousel d'image-->
+        <section class="gallery-section">
+            <div class="carousel">
+                <button class="carousel-button prev">&#10094;</button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide current-slide"><img src="../../img/video-games/r-type-effect/logo.png"
+                                alt="Capture d'écran 1" class="gallery-image"></li>
+                        <li class="carousel-slide"><img src="../../img/video-games/r-type-effect/schema.jpg"
+                                alt="Capture d'écran 2" class="gallery-image"></li>
+                        <li class="carousel-slide"><img src="../../img/video-games/r-type-effect/player.png"
+                                alt="Capture d'écran 3" class="gallery-image"></li>
+                    </ul>
+                </div>
+                <button class="carousel-button next">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Bouton de test -->
+        <section class="test-button-section">
+            <a href="https://11e-docteur.itch.io/r-type-effect" class="test-button"><i class="fas fa-qrcode"></i>Tester
+                le Jeu</a>
+
+        </section>
+
+        <!-- Navigation vers projets précédent et suivant -->
+        <section class="navigation-section">
+            <a href="lien-projet-précédent" class="nav-button">◀ Projet Précédent</a>
+            <a href="lien-projet-suivant" class="nav-button">Projet Suivant ▶</a>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+        <footer>
+            <div class="grid grid-footer">
+                <p>Made by Corentin Maris</p>
+            </div>
+        </footer>
     
+
+    <script src="../../js/carousel.js"></script>
 </body>
+
 </html>
