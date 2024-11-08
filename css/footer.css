@@ -14,7 +14,6 @@ footer {
     margin:auto;
     width: calc(3vw*26 + .1em);
     height: calc(3vw * 2 + .1em);
-    background-color: #000000;
     align-self: center;
     bottom: 0;
     text-align: center;
