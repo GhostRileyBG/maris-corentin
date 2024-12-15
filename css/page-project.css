@@ -164,8 +164,9 @@ video {
 }
 
 /* Section Objectifs */
+.introduction-section,
 .objectives-section,
-.challenges-section,
+.mechanics-section,
 .technologies-section {
     margin: 2rem 2rem;
     background-color: #1b1b1b;
@@ -174,21 +175,33 @@ video {
     box-shadow: 0 0 10px #20ff02;
 }
 
+.introduction-section h2,
 .objectives-section h2,
-.challenges-section h2,
+.mechanics-section h2,
 .technologies-section h2 {
     font-size: 1.8rem;
     color: #6ef759;
     margin-bottom: 1rem;
 }
 
+.introduction-section p,
 .objectives-section p,
-.challenges-section p,
+.mechanics-section p,
 .technologies-section p {
     color: #ccc;
     font-size: 1rem;
     line-height: 1.6;
     text-shadow: none;
+    text-align: justify;
+}
+
+.mechanics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 40px;
+    align-items: center;
+    place-items: center;
 }
 
 /* Style pour la Galerie */
