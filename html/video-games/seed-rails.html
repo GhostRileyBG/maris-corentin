@@ -51,13 +51,13 @@
         <section class="introduction-section">
             <h2>Project introduction</h2>
             <p>
-                
+                For the Global Game Jam 2023, the theme was "roots". Seed Rail is a prototype developed in two days.
             </p>
         </section>
 
         <!-- Vidéo du projet -->
         <section class="video-section">
-            <video controls>
+            <video class="project-video" controls>
                 <source src="path/to/your/video.mp4" type="video/mp4">
                 Votre navigateur ne supporte pas la lecture de vidéo.
             </video>
@@ -67,7 +67,8 @@
         <section class="objectives-section">
             <h2>My Role</h2>
             <p>
-                blablabla
+                In Seed Rail, my primary focus was on developing the enemy AI system. This included implementing
+                behavior patterns and designing a dynamic shooting system to enhance challenge and gameplay depth.
             </p>
         </section>
 
@@ -76,18 +77,29 @@
             <h2>Gameplay mechanics</h2>
             <div class="mechanics">
                 <p>
-                    <strong>Simon Says :</strong><br> Le joueur doit reproduire une séquence de couleurs pour valider la
-                    séquence. La partie est constituer de 5 séquences générée aléatoirement et recommence de zéro en cas
-                    d'échec d'une séquence.<br><br>
+                    <strong>Enemy AI System : </strong><br> The enemies in Seed Rail are equipped with dynamic AI that
+                    reacts to the player’s actions and navigates the environment intelligently. Their objective is to
+                    target and destroy the player’s repeaters one by one, slowing them down until the last repeater is
+                    eliminated.<br><br>
                 </p>
                 <p>
                     <img src="../../img/video-games/house-of-desolation/lotus-assets.png" alt="Capture d'écran 1"
                         class="gallery-image">
                 </p>
                 <p>
-                    <strong>Simon Says :</strong><br> Le joueur doit reproduire une séquence de couleurs pour valider la
-                    séquence. La partie est constituer de 5 séquences générée aléatoirement et recommence de zéro en cas
-                    d'échec d'une séquence.<br><br>
+                    <strong>Projectile System :</strong><br> Enemies feature an automated shooting system that
+                    exclusively targets the repeaters instead of the player, increasing tension and urgency in gameplay.
+                    Conversely, the player benefits from an auto-shooting system that prioritizes the closest enemy,
+                    encouraging fast-paced and strategic play.<br><br>
+                </p>
+                <p>
+                    <img src="../../img/video-games/house-of-desolation/lotus-assets.png" alt="Capture d'écran 1"
+                        class="gallery-image">
+                </p>
+                <p>
+                    <strong>Enemy Spawn System :</strong><br> An enemy spawner adds an element of surprise by randomly
+                    generating a number of enemies within a predefined range, bringing variety and dynamism to the
+                    gameplay.<br><br>
                 </p>
                 <p>
                     <img src="../../img/video-games/house-of-desolation/lotus-assets.png" alt="Capture d'écran 1"
@@ -100,9 +112,14 @@
         <section class="technologies-section">
             <h2>Tools and Technologies</h2>
             <p>
-                <strong>Unity :</strong> pour l'ensemble du développement du jeu, en mettant l'accent sur l'optimisation
-                du gameplay.<br>
-                <strong>Blueprint :</strong> pour la programmation des mécaniques.<br>
+                <strong>Unity :</strong> Main game engine, used to integrate features and create gameplay
+                interactions.<br>
+                <strong>C# :</strong> For programming the mechanics of enemy AI system.<br>
+                <strong>Discord :</strong> Team communication to coordinate the technical and creative aspects of the
+                project.<br>
+                <strong>Github :</strong> Version control platform used to manage and collaborate on the project's
+                codebase, allowing team members to track changes, fix issues, and ensure code stability throughout
+                development. <br>
             </p>
         </section>
 
@@ -134,7 +151,8 @@
 
         <!-- Bouton de test -->
         <section class="test-button-section">
-            <a href="https://0ur0boss.itch.io/seedrails" class="test-button"><i class="fas fa-qrcode"></i>Discover the game</a>
+            <a href="https://0ur0boss.itch.io/seedrails" class="test-button"><i class="fas fa-qrcode"></i>Discover the
+                game</a>
 
         </section>
 
@@ -147,12 +165,12 @@
     </div>
 
     <!-- Footer -->
-        <footer>
-            <div class="grid grid-footer">
-                <p>Made by Corentin Maris</p>
-            </div>
-        </footer>
-    
+    <footer>
+        <div class="grid grid-footer">
+            <p>Made by Corentin Maris</p>
+        </div>
+    </footer>
+
 
     <!-- <script src="../../js/carousel.js"></script> -->
 </body>

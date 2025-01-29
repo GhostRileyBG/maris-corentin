@@ -1,6 +1,13 @@
 const videoGameDatas = 
 [
     {
+        "name" : "Project Astra",
+        "image1": "../img/video-games/project-astra.png",
+        "link": "video-games/project-astra.html",
+        "filter-type": "school",
+        "tags": ""
+    },
+    {
         "name" : "QATP",
         "image1": "../img/video-games/qatp.jpg",
         "link": "video-games/qatp.html",

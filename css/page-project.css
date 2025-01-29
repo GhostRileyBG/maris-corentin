@@ -41,9 +41,16 @@
     margin: 2rem 0;
 }
 
-video {
+.project-video {
     width: 100%;
     max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #20ff02;
+}
+
+.mechanic-video {
+    width: 100%;
+    max-width: 300px;
     border-radius: 8px;
     box-shadow: 0 0 10px #20ff02;
 }
