@@ -1,6 +1,13 @@
 const videoGameDatas = 
 [
     {
+        "name" : "City Game",
+        "image1": "../img/video-games/city-game.png",
+        "link": "video-games/city-game.html",
+        "filter-type": "school",
+        "tags": ""
+    },
+    {
         "name" : "Project Astra",
         "image1": "../img/video-games/project-astra.png",
         "link": "video-games/project-astra.html",

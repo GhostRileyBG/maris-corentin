@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corentin Maris - City Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../css/page-project.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/footer-project.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <!-- <link rel="stylesheet" href="../../css/text.css"> -->
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <section class="navbar-section">
+        <navbar>
+            <ul class="nav-ul">
+                <li class="nav-link"><a href="../../index.html">Home</a></li>
+                <li class="nav-link"><a href="../work.html">Work</a></li>
+                <li class="nav-link"><a href="../about.html">About</a></li>
+            </ul>
+        </navbar>
+    </section>
+
+    <div class="project-container">
+
+        <!-- Titre et Tagline -->
+        <section class="header-section">
+            <h1 class="project-title">City Game</h1>
+            <div class="project-tags">
+                <span class="tag">Arcade Shooter</span>
+                <span class="tag">Fast-Paced</span>
+                <span class="tag">Solo</span>
+                <span class="tag">Enemy Waves</span>
+                <span class="tag">AI Combat</span>
+                <span class="tag">Colorful Sci-Fi</span>
+            </div>
+        </section>
+
+
+
+        <!-- Image principale -->
+        <section class="main-image-section">
+            <img src="../../img/video-games/city-game/ld.png" alt="Image principale du projet" class="main-image">
+        </section>
+
+        <!-- introduction du Projet -->
+        <section class="introduction-section">
+            <h2>Project introduction</h2>
+            <p>
+                City Game is a fast-paced arcade FPS where the player faces waves of robots in a colorful and futuristic
+                universe. Designed as a dynamic solo experience, the project focuses on fluid gameplay, simple yet
+                effective mechanics, and a tight rhythm that keeps the player constantly on edge.
+            </p>
+        </section>
+
+        <!-- Vidéo du projet -->
+        <section class="video-section">
+            <video class="project-video" controls>
+                <source src="path/to/your/video.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéo.
+            </video>
+        </section>
+
+        <!-- Objectifs du Projet -->
+        <section class="objectives-section">
+            <h2>My Role</h2>
+            <p>
+                I was responsible for the entire development of the game, designing and programming all the gameplay
+                mechanics. I also worked on the game design, defining the rules, pacing, and wave balancing to deliver a
+                smooth and dynamic arcade experience.
+            </p>
+        </section>
+
+        <!-- Défis Techniques -->
+        <section class="mechanics-section">
+            <h2>Gameplay mechanics</h2>
+            <div class="mechanics">
+                <p>
+                    <strong>Player Movement :</strong><br>
+                    Fast and fluid third-person controls designed for an arcade and responsive gameplay experience.<br><br>
+                </p>
+                <p>
+                    <video class="mechanic-video" controls>
+                        <source src="../../img/video-games/city-game/Player-move.mp4"
+                            type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture de vidéo.
+                    </video>
+                </p>
+                <p>
+                    <strong>Shooting System :</strong><br> A simple but dynamic shooting mechanic, requiring players to manage their ammo to keep the action flowing.<br><br>
+                </p>
+                <p>
+                    <video class="mechanic-video" controls>
+                        <source src="../../img/video-games/city-game/Shooting-system.mp4"
+                            type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture de vidéo.
+                    </video>
+                </p>
+                <p>
+                    <strong>Reload System :</strong><br>
+                    Ammunition is tied to “balloon pickups” placed around the map, forcing the player to move and strategize to stay supplied.<br><br>
+                </p>
+                <p>
+                    <video class="mechanic-video" controls>
+                        <source src="../../img/video-games/city-game/Reload-system.mp4"
+                            type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture de vidéo.
+                    </video>
+                </p>
+                <p>
+                    <strong>Smart Enemy Spawning :</strong><br> Enemies spawn through a predictive system that validates distances and positions to ensure balance and tension.<br><br>
+                </p>
+                <p>
+                    <video class="mechanic-video" controls>
+                        <source src="../../img/video-games/city-game/Spawn.mp4"
+                            type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture de vidéo.
+                    </video>
+                </p>
+                <p>
+                    <strong>Enemy AI :</strong><br>
+                    Ground robots patrol, detect the player within a vision cone, and attack when alerted. Flying robots share the same detection and attack logic but use a custom navigation system adapted for aerial movement.<br><br>
+                </p>
+                <p>
+                    <video class="mechanic-video" controls>
+                        <source src="../../img/video-games/city-game/IA.mp4"
+                            type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture de vidéo.
+                    </video>
+                </p>
+                <p>
+                    <strong>Scoring System :</strong><br> Tracks kills, combos, and wave progression to reward efficient play and maintain an arcade rhythm.<br><br>
+                </p>
+                <p>
+                    <img src="../../img/video-games/city-game/scoring.png" alt="Capture d'écran 1"
+                        class="gallery-image">
+                </p>
+                <p>
+                    <strong>Debugging & Optimization :</strong><br>
+                    Development included extensive debugging and optimizations using pooling and a wave manager to ensure smooth performance even with multiple enemies.<br><br>
+                </p>
+                <p>
+                    <img src="../../img/video-games/city-game/waves-system.png" alt="Capture d'écran 1"
+                        class="gallery-image">
+                </p>
+            </div>
+        </section>
+
+        <!-- Technologies and Tools Used -->
+        <section class="technologies-section">
+            <h2>Tools and Technologies</h2>
+            <p>
+                <strong>Unity :</strong> Main game engine, used to integrate VR features and create gameplay
+                interactions.<br>
+                <strong>C# :</strong> For programming the gameplay mechanics.<br>
+                <strong>Drive :</strong> For file sharing.<br>
+                <strong>Discord :</strong> Team communication to coordinate the technical and creative aspects of the
+                project.<br>
+                <strong>Github :</strong> Version control platform used to manage and collaborate on the project's
+                codebase, allowing team members to track changes, fix issues, and ensure code stability throughout
+                development. <br>
+            </p>
+        </section>
+
+        <!-- Galerie d'image' -->
+        <section class="gallery-section">
+            <img src="../../img/video-games/city-game/gameplay-6.png" alt="Capture d'écran 1" class="gallery-image">
+            <img src="../../img/video-games/city-game/gameplay-3.png" alt="Capture d'écran 2" class="gallery-image">
+            <img src="../../img/video-games/city-game/gameplay-2.png" alt="Capture d'écran 3" class="gallery-image">
+            <img src="../../img/video-games/city-game/gameplay.png" alt="Capture d'écran 4" class="gallery-image">
+            <img src="../../img/video-games/city-game/ld.png" alt="Capture d'écran 5" class="gallery-image">
+            <img src="../../img/video-games/city-game/ld-1.png" alt="Capture d'écran 6"
+                class="gallery-image">
+            <img src="../../img/video-games/city-game/ld-2.png" alt="Capture d'écran 7" class="gallery-image">
+            <img src="../../img/video-games/city-game/ld-3.png" alt="Capture d'écran 8" class="gallery-image">
+            <img src="../../img/video-games/city-game/ld-4.png" alt="Capture d'écran 8" class="gallery-image">
+            <img src="../../img/video-games/city-game/ld-5.png" alt="Capture d'écran 8" class="gallery-image">
+            <img src="../../img/video-games/city-game/ld-6.png" alt="Capture d'écran 8" class="gallery-image">
+            <img src="../../img/video-games/city-game/ld-7.png" alt="Capture d'écran 8" class="gallery-image">
+        </section>
+
+        <!-- Carrousel d'image-->
+        <!-- <section class="gallery-section">
+            <div class="carousel">
+                <button class="carousel-button prev">&#10094;</button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide current-slide"><img src="../../img/video-games/r-type-effect/logo.png"
+                                alt="Capture d'écran 1" class="gallery-image"></li>
+                        <li class="carousel-slide"><img src="../../img/video-games/r-type-effect/schema.jpg"
+                                alt="Capture d'écran 2" class="gallery-image"></li>
+                        <li class="carousel-slide"><img src="../../img/video-games/r-type-effect/player.png"
+                                alt="Capture d'écran 3" class="gallery-image"></li>
+                    </ul>
+                </div>
+                <button class="carousel-button next">&#10095;</button>
+            </div>
+        </section> -->
+
+        <!-- Bouton de test -->
+        <section class="test-button-section">
+            <a href="" class="test-button"><i class="fas fa-qrcode"></i>Discover the game</a>
+
+        </section>
+
+        <!-- Navigation vers projets précédent et suivant -->
+        <section class="navigation-section">
+            <a href="http://127.0.0.1:5501/html/video-games/misdirection.html" class="nav-button">◀ Misdirection</a>
+            <a href="http://127.0.0.1:5501/html/video-games/project-astra.html" class="nav-button">Project Astra ▶</a>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="grid grid-footer">
+            <p>Made by Corentin Maris</p>
+        </div>
+    </footer>
+    <!-- <script src="../../js/carousel.js"></script> -->
+    <!-- <script src="../../js/popup.js"></script> -->
+</body>
+
+</html>
